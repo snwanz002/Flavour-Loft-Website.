@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu AU VIC WA NT Pre", serif;
+}
+
+.main{
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+}
+nav{
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    line-height: 80px;
+    padding:0px 100px;
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo a{
+    font-size:39px;
+    color: rgb(208, 0, 255);
+    font-weight: bold;
+    margin-left: 100px;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s all ease;
+}
+ul{
+    margin: 0px;
+    margin-right: 100px;
+}
+ul li{
+    float: left;
+    padding: 0px 10px;
+    list-style: none;
+}
+ul li a:hover{
+    color: rgb(208, 0, 255);
+}
+
+.header{
+    background-image:url(god.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align:center;
+    background:rgba(0,0,0,0.5);
+}
+
+.content h1{
+    font-size: 50px;
+}
+
+.content p{
+    padding: 0px 70px;
+    font-size: 20px;
+}
+
+button{
+    background:none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: 0.5s all ease;
+}
+
+button:hover{
+    background: rgb(189, 122, 210);
+    color: #fff;
+
+}
+h4{
+    font-family: "Ubuntu Sans", serif;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .about_main .image img{
+    width: 600px;
+    position: relative;
+    top: 60px;
+}
+.about .about_main .about_text h1 span{
+    color: #39373a;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+.about .about_main .about_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+#section{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Lucida Handwriting;
+}
+#ABOUT {
+    background-color: #c2bbc2; 
+    padding: 40px 0; 
+}
+#DISHES {
+    background-image:url(img/restaurant.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 40px 0;
+}
+#Dishes_Row{
+    display: flex;
+    padding: 0 100px 0 200px;
+}
+#Dishes_Col{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 2px solid #bbb;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    flex: 10;
+}
+#Dishes_Col h2{
+    background-color: rgb(167, 62, 149);
+    color:#fff;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+    font-size: 30px;
+}
+#DISHES, #ABOUT{
+    margin: 0;
+    padding: 0;
+}
+#image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid orange;
+}
+#image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+#mic-container {
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    left: 20px; 
+    top: 20px; 
+}
+.voice-command-btn {
+    width: 70px;             
+    height: 70px;             
+    border-radius: 50%;        
+    background-color: #c46eb3;
+    color: white;             
+    border: none;           
+    font-size: 30px;         
+    position: fixed;
+    top: 20px;        
+    right: 20px;             
+    display: flex;         
+    justify-content: center;   
+    align-items: center;       
+    cursor: pointer;          
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-right: 10px;
+}
+.voice-command-btn:hover {
+    background-color: #962c98b9; 
+}
+
+#DISHES {
+    padding-top: 80px; 
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.recipe-container {
+    position: relative; 
+    display: inline-block;
+    margin: 20px;
+}
+.deviled-eggs {
+    position: relative;
+    display: inline-block;
+}
+.view-recipe-btn {
+    position: absolute;
+    top: 250px; 
+    left: 40px; 
+    transform: translate(-50%, -50%); 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #b66bb6;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.view-recipe-btn:hover {
+    background-color: #b02edc;
+}
+.ingredient-bubble {
+    display: none; 
+    position: absolute; 
+    top: 250px; 
+    left: 0; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s; 
+}
+.ingredient-bubble {
+    display: none;
+}
+.ingredient-bubble.active {
+    display: block
+}
+.recipe-container:hover .ingredient-bubble {
+    display: block;
+    opacity: 1;
+}
+.ingredient-bubble ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ingredient-bubble li {
+    margin-bottom: 5px;
+}
+.deviled-eggs img {
+    width: 100%;
+    border-radius: 50%; 
+    display: block;
+}
+.deviled-eggs img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover; 
+}
+.cucumber-bites .view-recipe-btn {
+    top: 600px;
+    left: -10px;
+    transform: translate(-50%, -50%);
+}
+.stuffed-mushrooms .view-recipe-btn {
+    top: 850px;
+    left: -50px;
+    transform: translate(-50%, -50%);
+}
+.herb-crusted-lamb .view-recipe-btn {
+    top: 350px;
+    left: 350px;
+    transform: translate(-50%, -50%);
+}
+.beef-wellington .view-recipe-btn {
+    top: 600px;
+    left: 305px;
+    transform: translate(-50%, -50%);
+}
+.braised-ribs .view-recipe-btn {
+    top: 850px;
+    left: 260px;
+    transform: translate(-50%, -50%);
+}
+.creme-Brulee .view-recipe-btn {
+    top: 350px;
+    left: 590px;
+    transform: translate(-50%, -50%);
+}
+.Banana-Foster .view-recipe-btn {
+    top: 600px;
+    left: 550px;
+    transform: translate(-50%, -50%);
+}
+.Honeyy-cheesecake .view-recipe-btn {
+    top: 850px;
+    left: 510px;
+    transform: translate(-50%, -50%);
+}
+#contact{
+    padding: 25px 0 25px 0;    
+}
+#contact_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    flex-wrap: wrap;
+}
+.contact_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.contact_col p,h3{
+    font-weight: bold;
+    color:#292929;
+    margin: 10px;
+}
+.contact_col p a{
+    text-decoration: none;
+    color: #292929
+}
+#social a{
+    color: magenta;
+    margin: 3px;
+}
+.contact_col form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 169, 222);
+    width: 70%;
+    padding: 20px 40px 20px 20px;
+}
+.contact_col form h2{
+    text-align: center;
+    font-family: cursive;
+}
+.contact_col form input{
+    width: 100%;
+    height: 17pt;
+    padding: 5px;
+    margin: 5px;
+}
+.contact_col form textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+.contact_col form button {
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(124, 120, 115);
+    border: 1px solid
+}
+#CONTACT {
+    background-color: #8f888f; 
+    padding: 40px 0;
+}
+
+.gallery{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallery h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery h1 span{
+    margin-left: 15px;
+    color:#fac031;
+    font-family: mv boli;
+}
+
+.gallery h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.gallery .gallery_image_box{
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px
+}
+@media (max-width: 768px){
+    .gallery .gallery_image_box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery .gallery_image_box {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.gallery .gallery_image_box .gallery_image{
+    width: 100%;
+    aspect-ratio: 1 /1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    overflow: hidden;
+}
+
+.gallery .gallery_image_box .gallery_image img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+}
+.gallery .gallery_image_box .gallery_image:hover img{
+    opacity: 0.4;
+}
+
+@media (max-width: 768) {
+
+}
+.gallery .gallery_image_box .gallery_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color:#fac031;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery .gallery_image_box .gallery_image:hover h3{
+    opacity: 1;
+}
+
+.gallery .gallery_image_box .gallery_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: opacity 0.3s ease;
+    font-size: 12px;
+    font-family: 'Arial', sans serif;
+}
+.gallery .gallery_image_box .gallery_image:hover p {
+    opacity: 1; 
+}
+.gallery .gallery_image_box .gallery_image .gallery_btn{
+    position: absolute;
+    margin-top: 180px;
+    color:#000;
+    background:#fac031;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 1;
+    transform: translate (45px);
+    z-index: 5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery .gallery_image_box .gallery_image:hover .gallery_btn{
+    opacity: 0.3s;
+    transform: translate(0);
+}
+#GALLERY{
+    background-color: #c2bbc2; 
+    padding: 40px 0; 
+}
+
